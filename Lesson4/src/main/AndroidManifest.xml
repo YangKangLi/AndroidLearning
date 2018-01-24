@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".section1.Section1Activity" />
         <activity android:name=".section2.Section2Activity" />
-        <activity android:name=".section3.Section3Activity"></activity>
+        <activity android:name=".section3.Section3Activity" />
+        <activity android:name=".section4.Section4Activity" />
+        <activity android:name=".section5.Section5Activity" />
+        <activity android:name=".section5.NewsContentActivity" />
     </application>
 
 </manifest>

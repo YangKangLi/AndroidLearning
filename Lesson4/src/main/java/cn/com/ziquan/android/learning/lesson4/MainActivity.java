@@ -13,6 +13,8 @@ import android.widget.ListView;
 import cn.com.ziquan.android.learning.lesson4.section1.Section1Activity;
 import cn.com.ziquan.android.learning.lesson4.section2.Section2Activity;
 import cn.com.ziquan.android.learning.lesson4.section3.Section3Activity;
+import cn.com.ziquan.android.learning.lesson4.section4.Section4Activity;
+import cn.com.ziquan.android.learning.lesson4.section5.Section5Activity;
 
 /**
  * Created by Administrator on 2018/1/24.
@@ -23,7 +25,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private static final String[] SECTION_LIST = {
             "Section1：Fragment的简单用法",
             "Section2：动态添加Fragment",
-            "Section3：Fragment与Activity之间通信"};
+            "Section3：Fragment与Activity之间通信",
+            "Section4：Fragment的生命周期",
+            "Section5：限定符"};
 
     private ListView lvSectionList;
 
@@ -55,6 +59,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 2:
                 startActivity(new Intent(MainActivity.this, Section3Activity.class));
+                break;
+            case 3:
+                startActivity(new Intent(MainActivity.this, Section4Activity.class));
+                break;
+            case 4:
+                startActivity(new Intent(MainActivity.this, Section5Activity.class));
                 break;
         }
     }
