@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".section1.Section1Activity"></activity>
+        <activity android:name=".section2.Section2Activity"></activity>
     </application>
 
 </manifest>

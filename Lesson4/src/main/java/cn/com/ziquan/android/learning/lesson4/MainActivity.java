@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import cn.com.ziquan.android.learning.lesson4.section1.Section1Activity;
+import cn.com.ziquan.android.learning.lesson4.section2.Section2Activity;
 
 /**
  * Created by Administrator on 2018/1/24.
@@ -18,7 +19,9 @@ import cn.com.ziquan.android.learning.lesson4.section1.Section1Activity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
-    private static final String[] SECTION_LIST = {"Section1：Fragment的简单用法", "Section2：动态添加Fragment"};
+    private static final String[] SECTION_LIST = {
+            "Section1：Fragment的简单用法",
+            "Section2：动态添加Fragment"};
 
     private ListView lvSectionList;
 
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         switch (position) {
             case 0:
                 startActivity(new Intent(MainActivity.this, Section1Activity.class));
+                break;
+            case 1:
+                startActivity(new Intent(MainActivity.this, Section2Activity.class));
                 break;
         }
     }
