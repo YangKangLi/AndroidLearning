@@ -21,6 +21,7 @@
         <activity android:name=".section3.Section3Activity" />
         <activity android:name=".section4.Section4Activity" />
         <activity android:name=".section5.Section5Activity" />
+        <activity android:name=".section5.NewsContentActivity" />
     </application>
 
 </manifest>

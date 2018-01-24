@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context="cn.com.ziquan.android.learning.lesson4.section5.Section5Activity">
 
-    <Button
+    <fragment
+        android:id="@+id/fragment_news_list"
+        android:name="cn.com.ziquan.android.learning.lesson4.section5.NewsListFragment"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="一个按钮" />
+        android:layout_height="match_parent" />
 
-    <TextView
+    <fragment
+        android:id="@+id/fragment_news_content"
+        android:name="cn.com.ziquan.android.learning.lesson4.section5.NewsContentFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="右边的" />
-
-    <!--<FrameLayout-->
-    <!--android:id="@+id/fragment_container"-->
-    <!--android:layout_width="100dp"-->
-    <!--android:layout_height="match_parent" />-->
+        android:layout_height="match_parent" />
 
 </LinearLayout>

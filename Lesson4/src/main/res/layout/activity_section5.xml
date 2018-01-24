@@ -7,9 +7,10 @@
     android:orientation="vertical"
     tools:context="cn.com.ziquan.android.learning.lesson4.section5.Section5Activity">
 
-    <Button
+    <fragment
+        android:id="@+id/fragment_news_list"
+        android:name="cn.com.ziquan.android.learning.lesson4.section5.NewsListFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="只有一个按钮" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
