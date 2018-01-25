@@ -9,13 +9,15 @@
     <fragment
         android:id="@+id/fragment_news_list"
         android:name="cn.com.ziquan.android.learning.lesson4.section5.NewsListFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent" />
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
     <fragment
         android:id="@+id/fragment_news_content"
         android:name="cn.com.ziquan.android.learning.lesson4.section5.NewsContentFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
 
 </LinearLayout>

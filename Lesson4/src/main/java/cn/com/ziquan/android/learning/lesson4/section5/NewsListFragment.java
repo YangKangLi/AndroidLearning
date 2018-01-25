@@ -47,8 +47,11 @@ public class NewsListFragment extends Fragment implements AdapterView.OnItemClic
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        // TODO 暂时先这么判断，如果有问题再改
         if (getActivity().findViewById(R.id.fragment_news_content) != null) {
             mIsTwoPane = true;
+        } else {
+            mIsTwoPane = false;
         }
     }
 
@@ -72,11 +75,14 @@ public class NewsListFragment extends Fragment implements AdapterView.OnItemClic
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if (mIsTwoPane) {
-
+            NewsContentFragment fragment = (NewsContentFragment) getFragmentManager().findFragmentById(R.id.fragment_news_content);
+            fragment.refresh(mNewsAdapter.getItem(position));
         } else {
-            Intent intent = new Intent(getActivity(), NewsContentActivity.class);
-            intent.putExtra("NEW_BUNDLE", mNewsAdapter.getItem(position));
-            startActivity(intent);
+            // 单页模式
+//            Intent intent = new Intent(getActivity(), NewsContentActivity.class);
+//            intent.putExtra("NEW_BUNDLE", mNewsAdapter.getItem(position));
+//            startActivity(intent);
+            NewsContentActivity.actionStart(getActivity(), mNewsAdapter.getItem(position));
         }
     }
 

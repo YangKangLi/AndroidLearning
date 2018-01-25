@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "Section2：动态添加Fragment",
             "Section3：Fragment与Activity之间通信",
             "Section4：Fragment的生命周期",
-            "Section5：限定符"};
+            "Section5：简易新闻界面"};
 
     private ListView lvSectionList;
 
