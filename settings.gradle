@@ -1,1 +1,1 @@
-include ':Lesson3', ':Lesson4', ':Lesson5', ':Lesson6'
+include ':Lesson3', ':Lesson4', ':Lesson5', ':Lesson6', ':LibOrmLite', ':OrmLiteDemo'
